@@ -5,18 +5,22 @@
 <body>
     <h1>Exemplo de formulário para o Show me the Leads</h1>
     <form method="POST" action="https://smtl.gama.academy/leads/bfeee310-b7e1-11ea-8228-89cff86db9a0">
-      <input
+     <label for="name">Nome completo:</label>
+        <input
         name="name"
         type="text"
         pattern="^\D{2,}\s[\D\s]{2,}$"
         title="Digite seu nome completo"
         required
+        placeholder="João das Neves"
       />
+      <label for="email">E-mail:</label>
       <input
         name="email"
         type="email"
         title="Digite um email válido"
         required
+        placeholder="eu@email.com"
       />
       <input name="redirectTo" type="hidden" value="https://gama.academy" />
       <input name="debugMode" type="hidden" value="true" />
