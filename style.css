@@ -24,8 +24,15 @@
     box-sizing: border-box;
     font-style: Arial;
 }
+
+.PlusPlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 :root {
-    --hue-neutral: 200;
+    --hue-neutral: 200; /* alterar as cores */
     --hue-wrong: 0;
     --hue-correct: 145;
 }
