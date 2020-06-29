@@ -1,175 +1,128 @@
-* {
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    font-family: 'Lato', sans-serif;
-    background-image: url(images/background.jpg);
-    background-size: cover;
-    background-position: center; 
-    height: 100vh;
-    overflow: hidden;
-  }
+// Model
+            function Question(stem, choices, answer) {
+                this.stem = stem;
+                this.choices = choices;
+                this.answer = answer
+              }
 
-  header {
-    background-color: rgb(0,0,0);
-    height: 11vh;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10;
-  }
-  
-  header img {
-    height: 50px;
-  }
+              Question.prototype.checkAnswer = function(choice) {
+                return (choice === this.answer);
+              }
 
-  nav {
-      line-height: 1.5;
-  }
+              // Controller
 
-  .quiz {
-    width: 100%;
-    height: 89vh;
-    background-color: rgba(255,255,255,0.4);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    padding: 4em 2em 4em;
-    float: right;
-  }
-  
-  .stem {
-    font-size: 3em;
-    margin: 0 auto 1.2em;
-  }
-  
+              function Quiz(questionList) {
+                this.score = 0;
+                this.questionList = questionList;
+                this.questionNo = 0;
+              };
 
-.choice-flexbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+              Quiz.prototype.getCurrentQuestion = function() {
+                return this.questionList[this.questionNo];
+              };
 
-  .options {
-    width: 50%;
-    font-size: 1em;
-    color: white;
-    background-color: rgb(0,0,0);
-    margin: 0.2em;
-    border-radius: 0px;
-    padding: 0.5em;
-    float: right;
-  }
-  
+              Quiz.prototype.isEnded = function() {
+                return this.questionNo == this.questionList.length;
+              };
 
+              Quiz.prototype.evaluateAnswer = function(answer) {
+                if (this.getCurrentQuestion().checkAnswer(answer)) {
+                  this.score++;
+                };
+                this.questionNo++;
+              }
 
-  .progress {
-    visibility: hidden;
-  }
-  
-  .refresh {
-    font-size: 1.5em;
-    color: white;
-    background-color: lightseagreen;
-    margin: 0.2em;
-    border-radius: 8px;
-    margin-top: 1em;
-    padding: 0.5em;
-    width: 150px;
-    text-align: center;
-  }
-  
-  .refresh:hover {
-    transform: scale(1.02);
-    box-shadow: 0 3px 4px black, inset 0 0 4px grey;
-    cursor: pointer;
-  }
-  
-  .refresh:focus {
-    outline: none;
-  }
-  
-  @media only screen and (max-width: 1200px) {
-    .quiz {
-      width: 100%;
-    }
-    .progress {
-      width: 100%;
-      padding-top: 1em;
-      margin-top: 1em;
-    }
-  }
-  
-  @media only screen and (max-width: 550px) {
-    .quiz {
-      padding: 0.5em 1em 0.5em;
-    }
-    .stem {
-      font-size: 2em;
-    }
-    .options {
-      font-size: 1.2em;
-      width: 80%
-    }
-    .progress {
-      width: 100%;
-      padding-top: 0.7em;
-      margin-top: 0.7em;
-    }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    .options:hover {
-      transform: scale(1.02);
-      box-shadow: 0 3px 4px black, inset 0 0 4px grey;
-      cursor: pointer;
-    }
-    .options:focus {
-      outline: none;
-    }
-  }
-  
-  
-  
-          /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100vw; /* Full width */
-    height: 100vh; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 90vw;
-    height: 90vh;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+              // View
+
+              function populate() {
+                if (quiz.isEnded()) {
+                    modal.style.display = "block";
+                } else {
+                  var element = document.getElementById('stem');
+                  element.innerHTML = quiz.getCurrentQuestion().stem;
+
+                  
+                  for (i = 0; i < quiz.getCurrentQuestion().choices.length; i++) {
+                    var element = document.getElementById('option' + i);
+                    element.innerHTML = quiz.getCurrentQuestion().choices[i];
+                    checkAnswer('option' + i, quiz.getCurrentQuestion().choices[i]);
+                    recordProgress();
+                  };
+                }
+              };
+
+              function showScores() {
+                var scoreString = "<h1>Scores</h1>";
+                scoreString += "<h3>You scored " + quiz.score + " out of " + quiz.questionList.length + "</h3>"
+//                scoreString += "<div id='refresh' class='refresh'>Re-take Quiz</div>"
+                var element = document.getElementById('quiz-area');
+                element.innerHTML = scoreString;
+
+//               var reTake = document.getElementById('refresh');
+//                reTake.onclick = function() {
+//                  refresh()
+//                }
+            };
+
+              function checkAnswer(htmlId, answer) {
+                var element = document.getElementById(htmlId);
+                element.onclick = function() {
+                  quiz.evaluateAnswer(answer);
+                  populate();
+                };
+              };
+
+              function setProgressBar() {
+                var element = document.getElementById('progress');
+                element.setAttribute('max', quiz.questionList.length);
+              };
+
+              function recordProgress() {
+                var element = document.getElementById('progress');
+                element.setAttribute('value', quiz.questionNo);
+              }
+
+              function refresh() {
+                var renewHTML = '<div class="quiz" id="quiz-area"><div class="stem" id="stem"></div><div class="choice-flexbox"><div class="options" id="option0"></div><div class="options" id="option1"></div><div class="options" id="option2"></div><div class="options" id="option3"></div><div class="options" id="option4"></div></div>	<div class="progress"><div><progress id="progress" max="100" value="0"></progress></div><div>Your progress</div></div></div>'
+                var element = document.getElementById('wrap');
+                element.innerHTML = renewHTML
+
+                quiz.score = 0;
+                quiz.questionNo = 0;
+                populate();
+                setProgressBar();
+              }
+
+              var questions = [
+                new Question("Which of the following pumps blood?", ["Spleen", "Lung", "Bone", "Heart", "Kidney"], "Heart"),
+                new Question("Which of the following has four legs?", ["Man", "Goat", "Fish", "Spider", "Pumpkin"], "Goat"),
+                new Question("Which is the least populated country in the world?", ["Italy", "Greece", "Ecuador", "Vatican City", "Ethiopia"], "Vatican City"),
+                new Question("Which planet is closest to the sun?", ["Venus", "Mars", "Mercury", "Jupiter", "Saturn"], "Mercury"),
+                new Question("Which is the fastest animal on the land?", ["Mouse", "Lion", "Cheetah", "Road Runner", "Wolf"], "Cheetah")
+              
+
+              ]
+
+               var quiz = new Quiz(questions);
+
+              populate();
+              setProgressBar();
+
+              // Get the modal
+              var modal = document.getElementById("myModal");
+
+              // Get the button that opens the modal
+              var btn = document.getElementById("myBtn");
+
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[0];
+
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function() {
+              modal.style.display = "none";
+              }
+
+              // When the user clicks on submit, close the modal
+              function endModal() {
+              modal.style.display = "none";
+              }
