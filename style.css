@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
   }
   
   body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-image: url(images/background.jpg);
     background-size: cover;
     background-position: center; 
@@ -27,8 +29,15 @@
     height: 50px;
   }
 
-  nav {
-      line-height: 1.5;
+  nav a {
+    font-size: 1.2em;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  nav a:hover {
+    color: #DF9C19;
   }
 
   .quiz {
@@ -36,7 +45,6 @@
     height: 89vh;
     background-color: rgba(255,255,255,0.4);
     box-sizing: border-box;
->>>>>>> Stashed changes
     display: flex;
     flex-direction: column;
     padding: 4em 2em 4em;
@@ -55,7 +63,6 @@
     align-items: center;
   }
 
-
   .options {
     width: 50%;
     font-size: 1em;
@@ -67,6 +74,7 @@
     float: right;
   }
   
+
 
   .progress {
     visibility: hidden;
@@ -86,7 +94,6 @@
   
   .refresh:hover {
     transform: scale(1.02);
-    box-shadow: 0 3px 4px black, inset 0 0 4px grey;
     cursor: pointer;
   }
   
@@ -126,9 +133,9 @@
   @media only screen and (min-width: 1024px) {
     .options:hover {
       transform: scale(1.02);
-      box-shadow: 0 3px 4px black, inset 0 0 4px grey;
       cursor: pointer;
     }
+
     .options:focus {
       outline: none;
     }
