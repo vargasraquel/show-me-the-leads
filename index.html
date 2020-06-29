@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
     <link href="style.css" rel="stylesheet">
     <script defer src="script.js"></script>
     <title>Quiz App</title>
@@ -23,12 +24,80 @@
                 <button class="btn">Resposta 2</button>
                 <button class="btn">Resposta 3</button>
                 <button class="btn">Resposta 4</button>
+=======
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="images/plusplay_preto.png">
+
+        <nav>
+            <a href="https://facebook.com/">Facebook</a>
+            <a href="https://instagram.com/">Instagram</a>
+            <a href="#twitter">Twitter</a>
+        </nav>
+    </header>
+
+    <div id="wrap">
+        <div class='quiz' id="quiz-area">
+         
+            <div class='stem' id="stem"></div>
+                <div class='choice-flexbox'>
+                    <div class="options" id="option0"></div>
+                    <div class="options" id="option1"></div>
+                    <div class="options" id="option2"></div>
+                    <div class="options" id="option3"></div>
+                    <div class="options" id="option4"></div>
+                </div>
+>>>>>>> Stashed changes
             </div>
-        </div>
-        <div class="controls">
-            <button id="start-btn" class="start-btn btn">Começar</button>
-            <button id="next-btn" class="next-btn btn hide">Proximo</button>
+            <div class="progress">
+                <div><progress id="progress" max="100" value="0"></progress></div>
+            </div> 
         </div>
     </div>
+
+    <!-- iframe redirection -->
+    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+        
+            <h1>Exemplo 3&ordf; de formulário para o Show me the Leads</h1>
+            
+            <form method="POST" action="sdsdf" target="dummyframe">
+            <label for="name">Nome completo:</label>
+            <input
+            name="name"
+            type="text"
+            pattern="^\D{2,}\s[\D\s]{2,}$"
+            title="Digite seu nome completo"
+            required
+            placeholder="João das Neves"
+            />
+
+            <label for="email">E-mail:</label>
+            <input
+            name="email"
+            type="email"
+            title="Digite um email válido"
+            required
+            placeholder="eu@email.com"
+            />
+
+            <input name="debugMode" type="hidden" value="true" />
+            <input type="submit"  value="Submit Answers" onclick="showScores();endModal()" />
+          </form>
+        
+        </div>
+    </div>
+      
+                  
+    <script src="script.js"></script>
 </body>
 </html>
