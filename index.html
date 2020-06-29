@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="teste2.css">
     <title>Document</title>
 </head>
 <body>
@@ -28,7 +28,6 @@
                     <div class="options" id="option3"></div>
                     <div class="options" id="option4"></div>
                 </div>
-
             </div>
             <div class="progress">
                 <div><progress id="progress" max="100" value="0"></progress></div>
@@ -46,8 +45,12 @@
         <div class="modal-content">
             <span class="close">&times;</span>
         
-            <h1>Exemplo 3&ordf; de formulário para o Show me the Leads</h1>
+            <h1>Que tal saber sua pontuação?</h1>
             
+            <p>Fica tranquilo! Não vamos encher sua caixa de e-mails!
+            A gente só vai mandar sua pontuação e uma resenha dos filmes pra você ficar mais antenado.</p>
+
+
             <form method="POST" action="sdsdf" target="dummyframe">
             <label for="name">Nome completo:</label>
             <input
@@ -57,6 +60,7 @@
             title="Digite seu nome completo"
             required
             placeholder="João das Neves"
+            class="nome"
             />
 
             <label for="email">E-mail:</label>
@@ -66,16 +70,17 @@
             title="Digite um email válido"
             required
             placeholder="eu@email.com"
+            class="email"
             />
 
             <input name="debugMode" type="hidden" value="true" />
-            <input type="submit"  value="Submit Answers" onclick="showScores();endModal()" />
+            <input type="submit" value="Ver a minha pontuação!" onclick="showScores();endModal()" class="enviar" />
           </form>
         
         </div>
     </div>
       
                   
-    <script src="script.js"></script>
+    <script src="teste3.js"></script>
 </body>
 </html>
