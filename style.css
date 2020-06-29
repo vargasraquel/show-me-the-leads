@@ -29,8 +29,15 @@
     height: 50px;
   }
 
-  nav {
-      line-height: 1.5;
+  nav a {
+    font-size: 1.2em;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  nav a:hover {
+    color: #DF9C19;
   }
 
   .quiz {
@@ -56,7 +63,6 @@
     align-items: center;
   }
 
-
   .options {
     width: 50%;
     font-size: 1em;
@@ -68,6 +74,7 @@
     float: right;
   }
   
+
 
   .progress {
     visibility: hidden;
@@ -87,7 +94,6 @@
   
   .refresh:hover {
     transform: scale(1.02);
-    box-shadow: 0 3px 4px black, inset 0 0 4px grey;
     cursor: pointer;
   }
   
@@ -127,9 +133,9 @@
   @media only screen and (min-width: 1024px) {
     .options:hover {
       transform: scale(1.02);
-      box-shadow: 0 3px 4px black, inset 0 0 4px grey;
       cursor: pointer;
     }
+
     .options:focus {
       outline: none;
     }
