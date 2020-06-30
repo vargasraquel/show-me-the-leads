@@ -161,7 +161,7 @@
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     width: 70vw;
     height: 70vh;
     position: absolute;
@@ -241,6 +241,8 @@
 
   }
   
+  /* Configuração mobile */
+
   @media only screen and (max-width: 550px) {
   body {
     overflow: auto;
@@ -290,4 +292,47 @@
     position: relative;
     left: 25%;
   }
+
+
+
+  /* Conteúdo do modal */
+  .modal-content {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+  }
+
+  /* Cabeçalho do modal */
+  .modal-content h1 { 
+    margin: 0;
+  }
+
+  /* Parágrafo de texto */
+  .modal-content p { 
+    font-size: 1em;
+    width: 100%;
+    margin: 13% auto 0;
+  }
+
+  /* Formulário da Gama */
+  .modal-content form { 
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+  
+  /* Rótulo de nome */
+  .modal-content label {
+    line-height: 0.5em;
+    width: 100%;
+  }
+
+  .enviar {
+    font-size: 1.1em;
+  }
+
+  .modal-content .nome, .modal-content .email {
+    width: 97%;
+  }
+
 }
