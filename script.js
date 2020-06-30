@@ -52,8 +52,9 @@
               };
 
               function showScores() {
-                var scoreString = "<h1>Scores</h1>";
-                scoreString += "<h3>You scored " + quiz.score + " out of " + quiz.questionList.length + "</h3>"
+                var scoreString = "<h1>Sua pontuação é...</h1>";
+                scoreString += "<h3>" + quiz.score + "0</h3>";
+                scoreString += "<p>0 a 30 - É melhor você avisar aos familiares que precisa maratonar no fim de semana para saber mais sobre esses filmes! <br />30 a 60 - Você mostrou que sabe do assunto, mas ainda pode melhorar!<br />70 a 90 - Sabe muito! Você é definitivamente engajado e quase gabaritou nosso teste.<br />100 - Nota 100! Você é incrível! Uma mistura de maratoneiro com Spike Lee!<br /><br />E você sabe quais são as semelhanças de todas essas obras?<br />Todas estão disponíveis no Amazon Prime Video!<br />Por R$9,90, você tem acesso a todos esses conteúdos! <br />E também frete grátis em compras pela Amazon, outros benefícios como músicas, e-books, revistas, jogos e muito mais!</p>"
 //                scoreString += "<div id='refresh' class='refresh'>Re-take Quiz</div>"
                 var element = document.getElementById('quiz-area');
                 element.innerHTML = scoreString;
