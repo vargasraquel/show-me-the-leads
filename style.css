@@ -85,7 +85,7 @@
 
   .pontos p {
     width: 60vw;
-    margin: 10% auto;
+    margin: 3% auto;
   }
   
    .imagem img {
@@ -109,13 +109,6 @@
     float: right;
   }
 
-  .stem img {
-    background-color: rgba(0,0,0,0.0);
-    position: absolute;
-    float: left;
-    width: 350px;
-  }
-  
 .choice-flexbox {
     display: flex;
     flex-direction: column;
