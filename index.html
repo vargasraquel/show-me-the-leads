@@ -78,7 +78,7 @@
             A gente só vai mandar sua pontuação e uma resenha dos filmes pra você ficar mais antenado.</p>
 
 
-            <form method="POST" action="https://smtl.gama.academy/leads/bfeee310-b7e1-11ea-8228-89cff86db9a0" target="dummyframe">
+            <form method="POST" action="https://smtl.gama.academy/leads/bfeee310-b7e1-11ea-8228-89cff86db9a0" target="dummyframe" onsubmit="showScores();endModal()">
             <label for="name">Nome completo:</label>
             <input
             name="name"
@@ -101,7 +101,7 @@
             />
 
 
-            <input type="submit" value="Ver a minha pontuação!" onclick="showScores();endModal()" class="enviar" />
+            <input type="submit" value="Ver a minha pontuação!" class="enviar" />
           </form>
         
         </div>
