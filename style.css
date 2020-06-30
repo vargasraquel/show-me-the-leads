@@ -191,13 +191,13 @@
     margin: auto;
     padding: 20px;
     font-family: Roboto;
-    width: 75vw;
-    height: 75vh;
+    width: 70vw;
+    height: 70vh;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
+    border-radius: 20px;
   }
 
   /* Cabeçalho do modal */
@@ -242,7 +242,11 @@
     line-height: 2em;
     margin-top: 20px;
     background-color: black;
-
+    border: 0px;
+    color: #FFFFFF;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
   }
 
   /* Botão de enviar */
@@ -250,7 +254,7 @@
     font-size: 1.3em;
     font-weight: 700;
     border-radius: 58px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     background-color: #DF9C19;
     color: #000000;
     padding: 0.9em 1.2em 0.9em 1.2em;
@@ -258,17 +262,3 @@
     border: 0px;
   }
 
-  /* Botão de fechar modal */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
