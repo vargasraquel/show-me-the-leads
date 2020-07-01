@@ -46,6 +46,12 @@
     src="https://www.facebook.com/tr?id=3307744329288787&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
+  <script>
+    fbq('track', 'CompleteRegistration', {
+      value: 0,
+      currency: 'BRL',
+    });
+  </script>
 
     <script src="https://kit.fontawesome.com/ca795b52ec.js" crossorigin="anonymous"></script>
     </head>
@@ -119,7 +125,7 @@
             />
 
 
-            <input type="submit" value="Ver a minha pontuação!" class="enviar" />
+            <input type="submit" value="Ver a minha pontuação!" class="enviar" id="submitButton" />
           </form>
         
         </div>
@@ -127,5 +133,11 @@
     </section>
                   
     <script src="script.js"></script>
+    <script type="text/javascript">
+        document.getElementById('submitButton').addEventListener('click', function() {
+        insert_event_code_here;
+        ...
+        }, false);
+        </script>
 </body>
 </html>
