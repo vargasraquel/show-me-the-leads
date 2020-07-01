@@ -83,16 +83,16 @@ function recordProgress() {
 }
 
 var questions = [
-  new Question("<img src='images/filme0.jpg' />","Esse cartaz é de qual filme?", ["Filme Lisístrata", "Filme Irmãs de Sangue", "Filme Black Legion", "Filme CHI-RAQ", "Não sei"], "Filme CHI-RAQ"),
-  new Question("<img src='images/filme1.jpg' />","Esse cartaz é de qual filme?", ["Filme Tropa de Elite", "Filme Cidade de Deus", "Filme Pixote", "Filme Cidade dos Homens", "Não sei"], "Filme Cidade de Deus"),
-  new Question("<img src='images/filme2.jpg' />","Esse cartaz é de qual filme?", ["Filme Fruitvale Station", "Filme Freedom Song", "Filme Luta por Justiça", "Filme Os últimos passos de um Homem", "Não sei"], "Filme Fruitvale Station"),
-  new Question("<img src='images/filme3.jpg' />","Esse cartaz é de qual filme?", ["Filme Amigos para Sempre", "Filme Moonlight", "Filme O Reencontro", "Filme Green Book", "Não sei"], "Filme Green Book"),
-  new Question("<img src='images/filme4.jpg' />","Esse cartaz é de qual filme?", ["Filme Whiplash", "Filme Guava Island", "Filme Music of the Sun", "Filme La La Land", "Não sei"], "Filme Guava Island"),
-  new Question("<img src='images/filme5.jpg' />","Esse cartaz é de qual filme?", ["Filme O Grande Hotel Budapeste", "Filme Hotel Artemis", "Filme Hotel Rwanda", "Filme Hotel Marigold", "Não sei"], "Filme Hotel Rwanda"),
-  new Question("<img src='images/filme6.jpg' />","Esse cartaz é de qual filme?", ["Filme ALI", "Filme Touro Indomável", "A Maior Luta de Muhammad Ali", "Eu Sou Ali: A História de Muhammad Ali", "Não sei"], "Filme ALI"),
-  new Question("<img src='images/filme7.jpg' />","Esse cartaz é de qual filme?", ["Filme Timbuktu", "Filme Virunga", "Filme Zaatari", "Filme Makala", "Não sei"], "Filme Makala"),
-  new Question("<img src='images/filme8.jpg' />","Esse cartaz é de qual filme?", ["Filme Um Sonho de Liberdade", "Filme Malcom X", "Filme Hurricane - O Furacão", "Filme Um Ato de Coragem", "Não sei"], "Filme Malcom X"),
-  new Question("<img src='images/filme9.jpg' />","Esse cartaz é de qual filme?", ["Filme Entrevista com Dr. Martin Luther King Jr.", "Filme Selma: Uma Luta pela Igualdade", "Filme Eu Não Sou Seu Negro", "Filme O Ódio que Você Semeia"], "Filme Entrevista com Dr. Martin Luther King Jr.")
+  new Question("<img src='images/filme0.jpg' />","Esse cartaz é de qual filme?", ["Lisístrata", "Irmãs de Sangue", "Black Legion", "CHI-RAQ", "Não sei"], "CHI-RAQ"),
+  new Question("<img src='images/filme1.jpg' />","Esse cartaz é de qual filme?", ["Tropa de Elite", "Cidade de Deus", "Pixote", "Cidade dos Homens", "Não sei"], "Cidade de Deus"),
+  new Question("<img src='images/filme2.jpg' />","Esse cartaz é de qual filme?", ["Fruitvale Station", "Freedom Song", "Luta por Justiça", "Os últimos passos de um Homem", "Não sei"], "Fruitvale Station"),
+  new Question("<img src='images/filme3.jpg' />","Esse cartaz é de qual filme?", ["Amigos para Sempre", "Moonlight", "O Reencontro", "Green Book", "Não sei"], "Green Book"),
+  new Question("<img src='images/filme4.jpg' />","Esse cartaz é de qual filme?", ["Whiplash", "Guava Island", "Music of the Sun", "La La Land", "Não sei"], "Guava Island"),
+  new Question("<img src='images/filme5.jpg' />","Esse cartaz é de qual filme?", ["O Grande Hotel Budapeste", "Hotel Artemis", "Hotel Rwanda", "Hotel Marigold", "Não sei"], "Hotel Rwanda"),
+  new Question("<img src='images/filme6.jpg' />","Esse cartaz é de qual filme?", ["ALI", "Touro Indomável", "A Maior Luta de Muhammad Ali", "Eu Sou Ali: A História de Muhammad Ali", "Não sei"], "ALI"),
+  new Question("<img src='images/filme7.jpg' />","Esse cartaz é de qual filme?", ["Timbuktu", "Virunga", "Zaatari", "Makala", "Não sei"], "Makala"),
+  new Question("<img src='images/filme8.jpg' />","Esse cartaz é de qual filme?", ["Um Sonho de Liberdade", "Malcom X", "Hurricane - O Furacão", "Um Ato de Coragem", "Não sei"], "Malcom X"),
+  new Question("<img src='images/filme9.jpg' />","Esse cartaz é de qual filme?", ["Entrevista com Dr. Martin Luther King Jr.", "Selma: Uma Luta pela Igualdade", "Eu Não Sou Seu Negro", "O Ódio que Você Semeia"], "Entrevista com Dr. Martin Luther King Jr.")
 
 ]
 
