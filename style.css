@@ -207,6 +207,13 @@
 
   }
 
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
+    
+
   /* Input de texto */
   .modal-content .nome, .modal-content .email {
     width: 300px;
