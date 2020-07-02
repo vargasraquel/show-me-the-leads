@@ -58,8 +58,17 @@ function populate() {
 function showScores() {
   var scoreString = "<div class='pontos'><h1>Sua pontuação é...</h1>";
   scoreString += "<h3>" + quiz.score + "0</h3>";
-  scoreString += "<p>0 a 30 - É melhor você avisar aos familiares que precisa maratonar no fim de semana para saber mais sobre esses filmes! <br />30 a 60 - Você mostrou que sabe do assunto, mas ainda pode melhorar!<br />70 a 90 - Sabe muito! Você é definitivamente engajado e quase gabaritou nosso teste.<br />100 - Nota 100! Você é incrível! Uma mistura de maratoneiro com Spike Lee!<br /><br />E você sabe quais são as semelhanças de todas essas obras?<br />Todas estão disponíveis no Amazon Prime Video!<br />Por R$9,90, você tem acesso a todos esses conteúdos! <br />E também frete grátis em compras pela Amazon, outros benefícios como músicas, e-books, revistas, jogos e muito mais!</p></div>"
-  var element = document.getElementById('quiz-area');
+ if (quiz.score < 3) { 
+  scoreString += "<p>É melhor você avisar aos familiares que precisa maratonar no fim de semana para saber mais sobre esses filmes! </p><div class='amazon'><p>E você sabe quais são as semelhanças de todas essas obras? Todas abordam este tema tão importante! <br />E para facilitar sua vida, vai aí uma dica: Todos estão listados lá na Amazon Prime Video, onde super indicamos!</p></div></div>";
+ } else if (quiz.score < 6) {
+  scoreString += "<p>Você mostrou que sabe do assunto, mas ainda pode melhorar!</p><div class='amazon'><p>E você sabe quais são as semelhanças de todas essas obras? Todas abordam este tema tão importante! <br />E para facilitar sua vida, vai aí uma dica: Todos estão listados lá na Amazon Prime Video, onde super indicamos!</p></div></div>";
+ } else if (quiz.score < 9) {
+  scoreString += "<p>Sabe muito! Você é definitivamente engajado e quase gabaritou nosso teste.</p><div class='amazon'><p>E você sabe quais são as semelhanças de todas essas obras? Todas abordam este tema tão importante! <br />E para facilitar sua vida, vai aí uma dica: Todos estão listados lá na Amazon Prime Video, onde super indicamos!</p></div></div>";
+ } else {
+  scoreString += "<p>Nota 100! Você é incrível! Uma mistura de maratoneiro com Spike Lee!</p><div class='amazon'><p>E você sabe quais são as semelhanças de todas essas obras? Todas abordam este tema tão importante! <br />E para facilitar sua vida, vai aí uma dica: Todos estão listados lá na Amazon Prime Video, onde super indicamos!</p></div></div>";
+ }
+ 
+ var element = document.getElementById('quiz-area');
   element.innerHTML = scoreString;
 
 };

@@ -67,33 +67,38 @@
   }
 
   .pontos {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    padding: 4em 2em 4em;
+    width: 60vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .pontos h1 {
     font-size: 1.8em;
-    width: 60vw;
-    margin: 0 auto;
     text-align: center;
   }
 
   .pontos h3 {
-    font-size: 5em;
-    width: 60vw;
-    margin: 0 auto;
+    font-size: 6.5em;
+    font-weight: 800;
     text-align: center;
     color: #DF9C19;
   }
 
   .pontos p {
-    width: 60vw;
-    margin: 3% auto;
+    margin: 2% 0;
+    font-size: 1.5em;
+    line-height: 1.6em;
+    font-weight: 700;
+    text-align: center;
   }
   
+  .amazon p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.6em;
+  }
+
    .imagem img {
     position: relative;
     width: 300px;
