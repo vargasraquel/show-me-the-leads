@@ -55,7 +55,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 4em 2em 4em;
+    padding: 3em 2em;
     position: relative;
     margin: auto;
   }
