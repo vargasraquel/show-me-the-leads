@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
     <title>PlusPlay</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171175081-1"></script>
@@ -55,7 +54,7 @@
   </script>
 
     <script src="https://kit.fontawesome.com/ca795b52ec.js" crossorigin="anonymous"></script>
-</head>
+    </head>
 <body>
     <section class="background">
     <header>
@@ -64,48 +63,78 @@
         <nav>
             <a href="https://www.facebook.com/plusplaybr"><i class="fab fa-facebook fa-lg"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://www.instagram.com/plusplay_"><i class="fab fa-instagram fa-lg"></i></a>
-        </nav>
+         </nav>
     </header>
 
-    <section class="container">
-        <div class="topo">
-            <div class="topo punho">
-                <img src="images/punho.png">
+
+        <div class='quiz' id="quiz-area">
+            
+                <div id="imagem" class="imagem"></div>
+                <div class="perguntas">
+                    <div class='stem' id="stem"></div>
+                    <div class='choice-flexbox'>
+                        <div class="options" id="option0"></div>
+                        <div class="options" id="option1"></div>
+                        <div class="options" id="option2"></div>
+                        <div class="options" id="option3"></div>
+                        <div class="options" id="option4"></div>
+
+                    </div>
+                    </div>
             </div>
-        <div class="topo texto">
-            <div class="quiztitle titulo">
-                <p>Quiz</p>
-            </div>
-            <div class="quiztitle blm">
-                <p>#VidasNegrasImportam</p>
-            </div>
+            
+            <div class="progress">
+                <div><progress id="progress" max="100" value="0"></progress></div>
+            </div> 
+
+   
+
+    <!-- iframe redirection -->
+    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      
+        <!-- Modal content -->
+        <div class="modal-content">
+            
+            <h1>Que tal saber sua pontuação?</h1>
+            
+            <p>Fica tranquilo! Não vamos encher sua caixa de e-mails!
+            A gente só vai mandar sua pontuação e uma resenha dos filmes pra você ficar mais antenado.</p>
+
+
+            <form method="POST" action="https://smtl.gama.academy/leads/bfeee310-b7e1-11ea-8228-89cff86db9a0" target="dummyframe" onsubmit="showScores();endModal()">
+            <label for="name">Nome completo:</label>
+            <input
+            name="name"
+            type="text"
+            pattern="^\D{2,}\s[\D\s]{2,}$"
+            title="Digite seu nome completo"
+            required
+            placeholder="João das Neves"
+            class="nome"
+            />
+
+            <label for="email">E-mail:</label>
+            <input
+            name="email"
+            type="email"
+            title="Digite um email válido"
+            required
+            placeholder="eu@email.com"
+            class="email"
+            />
+
+
+            <input type="submit" value="Ver a minha pontuação!" class="enviar"  />
+          </form>
+        
         </div>
     </div>
-
-        <ul class="quadrados">
-            <li class="quadro quadros1">
-                <i class="fas fa-comments fa-3x"></i><br><br>
-                Você é daqueles que sabe tudo de filmes e séries?
-                O que acha de testar seu conhecimento num quiz super divertido?
-            </li>
-            <li class="quadro quadros2">
-                <i class="fas fa-tasks fa-3x"></i><br><br>
-                Ah! E não importa quantas respostas você vai acertar. 
-                importante é você conhecer histórias inspiradoras sobre o assunto!
-            </li>
-            <li class="quadro quadros3">
-                <i class="fas fa-star fa-3x"></i><br><br>
-                E fica tranquilo! No fim, a gente envia sua pontuação 
-                e um ranking com as melhores recomendações de filmes dessa temática para você!
-            </li>
-        </ul>
-
-        <div class="btninicio">
-            <button onclick="window.location.href='entrada.html'">Quero Gabaritar esse Quiz!</button>
-        </div>
-<p><br><br><br><br></p>
     </section>
+                  
+    <script src="script.js"></script>
 
-    </section>
-    </body>
-    </html>
+</body>
+</html>
