@@ -51,21 +51,6 @@
     display: none;
   }
 
-  .quiz {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 3em 2em;
-    position: relative;
-    margin: auto;
-  }
-
-  .perguntas {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-  }
-
   .pontos {
     width: 60vw;
     display: block;
@@ -99,16 +84,32 @@
     line-height: 1.6em;
   }
 
-   .imagem img {
+  .quiz {
+    width: 100%;
+    display: inline-block;
     position: relative;
-    width: 300px;
-    left: 40%;
+    margin-left: 15vw;
+    margin-top: 2%;
+  }
+
+   .imagem img {
+    position: absolute;
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+
+  .perguntas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .stem {
     font-size: 1.5em;
+    width: 40vw;
+    height: initial;
     margin: 0 auto 1.2em;
-    width: 500px;
     padding: 1em 1em;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -119,13 +120,6 @@
     color: #000000;
   }
 
-  .stem img {
-    background-color: rgba(0,0,0,0.0);
-    position: absolute;
-    float: left;
-    width: 350px;
-  }
-  
 .choice-flexbox {
     display: flex;
     flex-direction: column;
@@ -133,7 +127,7 @@
   }
 
   .options {
-    width: 50%;
+    width: 40vw;
     font-size: 1.2em;
     color: white;
     background-color: rgb(0,0,0);
@@ -270,10 +264,10 @@
   }
 
   .quiz {
-    padding: 1em 0 0 0;;
     display: flex;
+    margin: 2% auto;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     align-items: center;
     justify-content: flex-start;
   }
@@ -309,8 +303,6 @@
     position: relative;
     left: 25%;
   }
-
-
 
   /* Conteúdo do modal */
   .modal-content {
