@@ -83,16 +83,16 @@ function recordProgress() {
 }
 
 var questions = [
-  new Question("<img src='images/filme0.jpg' />","Esse cartaz é de qual filme?", ["Lisístrata", "Irmãs de Sangue", "Black Legion", "CHI-RAQ", "Não sei"], "CHI-RAQ"),
-  new Question("<img src='images/filme1.jpg' />","Esse cartaz é de qual filme?", ["Tropa de Elite", "Cidade de Deus", "Pixote", "Cidade dos Homens", "Não sei"], "Cidade de Deus"),
-  new Question("<img src='images/filme2.jpg' />","Esse cartaz é de qual filme?", ["Fruitvale Station", "Freedom Song", "Luta por Justiça", "Os últimos passos de um Homem", "Não sei"], "Fruitvale Station"),
-  new Question("<img src='images/filme3.jpg' />","Esse cartaz é de qual filme?", ["Amigos para Sempre", "Moonlight", "O Reencontro", "Green Book", "Não sei"], "Green Book"),
-  new Question("<img src='images/filme4.jpg' />","Esse cartaz é de qual filme?", ["Whiplash", "Guava Island", "Music of the Sun", "La La Land", "Não sei"], "Guava Island"),
-  new Question("<img src='images/filme5.jpg' />","Esse cartaz é de qual filme?", ["O Grande Hotel Budapeste", "Hotel Artemis", "Hotel Rwanda", "Hotel Marigold", "Não sei"], "Hotel Rwanda"),
-  new Question("<img src='images/filme6.jpg' />","Esse cartaz é de qual filme?", ["ALI", "Touro Indomável", "A Maior Luta de Muhammad Ali", "Eu Sou Ali: A História de Muhammad Ali", "Não sei"], "ALI"),
-  new Question("<img src='images/filme7.jpg' />","Esse cartaz é de qual filme?", ["Timbuktu", "Virunga", "Zaatari", "Makala", "Não sei"], "Makala"),
-  new Question("<img src='images/filme8.jpg' />","Esse cartaz é de qual filme?", ["Um Sonho de Liberdade", "Malcom X", "Hurricane - O Furacão", "Um Ato de Coragem", "Não sei"], "Malcom X"),
-  new Question("<img src='images/filme9.jpg' />","Esse cartaz é de qual filme?", ["Entrevista com Dr. Martin Luther King Jr.", "Selma: Uma Luta pela Igualdade", "Eu Não Sou Seu Negro", "O Ódio que Você Semeia"], "Entrevista com Dr. Martin Luther King Jr.")
+  new Question("<img src='images/filme0.jpg' />","Qual é o filme em que as mulheres de Chicago fizeram greve de sexo até que as gangues largassem suas armas? ", ["Lisístrata", "Irmãs de Sangue", "Black Legion", "CHI-RAQ", "Não sei"], "CHI-RAQ"),
+  new Question("<img src='images/filme1.jpg' />","Qual é o filme que foi indicado ao Oscar em quatro categorias e retrata a vida em uma das favelas mais perigosas do Rio de Janeiro?", ["Tropa de Elite", "Cidade de Deus", "Pixote", "Cidade dos Homens", "Não sei"], "Cidade de Deus"),
+  new Question("<img src='images/filme2.jpg' />","Qual é o filme que conta a história de Oscar Grant, jovem de 22 anos, morto por policiais no último dia do ano de 2008 em Oakland?", ["Fruitvale Station", "Freedom Song", "Luta por Justiça", "Os últimos passos de um Homem", "Não sei"], "Fruitvale Station"),
+  new Question("<img src='images/filme3.jpg' />","Qual é o filme em que dois homens desenvolvem uma ligação inesperada ao enfrentar o racismo e os perigos de uma era de segregação racial?", ["Amigos para Sempre", "Moonlight", "O Reencontro", "Green Book", "Não sei"], "Green Book"),
+  new Question("<img src='images/filme4.jpg' />","Qual é o filme, que tem a cantora Rihanna no elenco e traz uma crítica ao sistema que julga a arte como inimiga?", ["Whiplash", "Guava Island", "Music of the Sun", "La La Land", "Não sei"], "Guava Island"),
+  new Question("<img src='images/filme5.jpg' />","Qual é o filme que conta como Paul Rusesabagina conseguiu manter à salvo 1268 pessoas dentro de um hotel?", ["O Grande Hotel Budapeste", "Hotel Artemis", "Hotel Rwanda", "Hotel Marigold", "Não sei"], "Hotel Rwanda"),
+  new Question("<img src='images/filme6.jpg' />","Qual é o filme que conta a história de Cassius Clay, personalidade do boxe nos anos 60?", ["ALI", "Touro Indomável", "A Maior Luta de Muhammad Ali", "Eu Sou Ali: A História de Muhammad Ali", "Não sei"], "ALI"),
+  new Question("<img src='images/filme7.jpg' />","Qual é o filme que escancara a realidade de povoados da África, onde os habitantes precisam percorrer grandes distâncias para vender seus produtos?", ["Timbuktu", "Virunga", "Zaatari", "Makala", "Não sei"], "Makala"),
+  new Question("<img src='images/filme8.jpg' />","Qual é o filme que traz a biografia de um dos principais ativistas pela luta dos afro-americanos por direitos civis?", ["Um Sonho de Liberdade", "Malcom X", "Hurricane - O Furacão", "Um Ato de Coragem", "Não sei"], "Malcom X"),
+  new Question("<img src='images/filme9.jpg' />","Qual é o filme que fez com que o presidente Kennedy se posicionasse quanto à segregação racial nos Estado Unidos?", ["Entrevista com Dr. Martin Luther King Jr.", "Selma: Uma Luta pela Igualdade", "Eu Não Sou Seu Negro", "O Ódio que Você Semeia"], "Entrevista com Dr. Martin Luther King Jr.")
 
 ]
 
