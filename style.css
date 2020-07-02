@@ -145,6 +145,13 @@
     line-height: 1.6em;
   }
   
+  .cego p {
+    position: absolute;
+    display: sticky;
+    bottom: 0em;
+    right: 0em;
+  }
+
   /* Configuração de fundo do modal*/    
  .modal {
     display: none; 
