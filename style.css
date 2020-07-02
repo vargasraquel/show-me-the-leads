@@ -61,9 +61,17 @@
 
    .imagem img {
     position: absolute;
-    width: 25vw;
+    width: 23vw;
     margin-left: auto;
     margin-right: auto;  
+  }
+
+  .imagem p {
+    position: absolute;
+    width: 22vw;
+    font-size: 16px;
+    text-align: center;
+    top: 100%;
   }
 
   .perguntas {
@@ -107,7 +115,7 @@
   .pontos {
     width: 60vw;
     display: block;
-    margin-left: auto;
+    margin-left: 5%;
     margin-right: auto;
   }
 
