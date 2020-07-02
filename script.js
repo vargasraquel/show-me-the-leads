@@ -50,7 +50,6 @@ function populate() {
       var element = document.getElementById('option' + i);
       element.innerHTML = quiz.getCurrentQuestion().choices[i];
       checkAnswer('option' + i, quiz.getCurrentQuestion().choices[i]);
-      recordProgress();
     };
   }
 };
@@ -81,15 +80,6 @@ function checkAnswer(htmlId, answer) {
   };
 };
 
-function setProgressBar() {
-  var element = document.getElementById('progress');
-  element.setAttribute('max', quiz.questionList.length);
-};
-
-function recordProgress() {
-  var element = document.getElementById('progress');
-  element.setAttribute('value', quiz.questionNo);
-}
 
 var questions = [
   new Question("<img src='images/filme0.jpg' />","Qual é o filme em que as mulheres de Chicago fizeram greve de sexo até que as gangues largassem suas armas? ", ["Lisístrata", "Irmãs de Sangue", "Black Legion", "CHI-RAQ", "Não sei"], "CHI-RAQ"),
@@ -108,7 +98,6 @@ var questions = [
  var quiz = new Quiz(questions);
 
 populate();
-setProgressBar();
 
 // Get the modal
 var modal = document.getElementById("myModal");

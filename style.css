@@ -51,39 +51,6 @@
     display: none;
   }
 
-  .pontos {
-    width: 60vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .pontos h1 {
-    font-size: 1.8em;
-    text-align: center;
-  }
-
-  .pontos h3 {
-    font-size: 6.5em;
-    font-weight: 800;
-    text-align: center;
-    color: #DF9C19;
-  }
-
-  .pontos p {
-    margin: 2% 0;
-    font-size: 1.5em;
-    line-height: 1.6em;
-    font-weight: 700;
-    text-align: center;
-  }
-  
-  .amazon p {
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.6em;
-  }
-
   .quiz {
     width: 100%;
     display: inline-block;
@@ -136,9 +103,38 @@
     padding: 0.8em;
     float: right;
   }
+
+  .pontos {
+    width: 60vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pontos h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .pontos h3 {
+    font-size: 6.5em;
+    font-weight: 800;
+    text-align: center;
+    color: #DF9C19;
+  }
+
+  .pontos p {
+    margin: 2% 0;
+    font-size: 1.5em;
+    line-height: 1.6em;
+    font-weight: 700;
+    text-align: center;
+  }
   
-  .progress {
-    visibility: hidden;
+  .amazon p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.6em;
   }
   
   /* Configuração de fundo do modal*/    
@@ -238,6 +234,7 @@
     padding: 0.9em 1.2em 0.9em 1.2em;
     margin-top: 8%;
     border: 0px;
+    cursor: pointer;
   }
 
   /* Função de escalar o tamanho dos botões */
