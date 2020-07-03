@@ -50,7 +50,7 @@
   .topo {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 12em;
+    margin-left: 15vw;
     margin-top: 1em;
   }
 
@@ -84,8 +84,8 @@
 
   .quadro {
     display: inline-block;
-    width: 20%;
-    height: 200px;
+    width: 20vw;
+    height: 27vh;
     text-align: center;
     vertical-align: middle;
   }
@@ -197,3 +197,10 @@
     right: 10px;
   }
 }
+
+  /* Versão Tablet */
+  @media only screen and (max-width: 1024px) {
+    .quadro {
+      height: 30vh;
+    }
+  }
