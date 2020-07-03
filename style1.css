@@ -102,6 +102,13 @@
     color: #DF9C19;
   }
 
+  .cego p {
+    position: absolute;
+    display: sticky;
+    bottom: 0em;
+    right: 0em;
+  }
+
   /* Botão de enviar */
   button {
     font-size: 1.3em;
@@ -182,5 +189,10 @@
 
   button {
     width: 85%;
+  }
+  .cego p {
+    position: sticky;
+    bottom: 0;
+    right: 0;
   }
 }
